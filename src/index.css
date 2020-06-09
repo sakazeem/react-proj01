@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App-logo {
+  height: 10vmin !important;
+  pointer-events: none;
+}
+.content {
+    margin-bottom: 50px;
+}
+.content div h4 {
+    color: darkgreen;
+}
+.content div p {
+  color: red;
+}
+.content .profilePic {
+  margin-top: 20px;
+  border-radius: 50%;
+}

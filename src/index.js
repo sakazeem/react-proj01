@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import logo from './logo.svg';
+import profile from './profile.jpg';
+import Course from './course.js'
+import NameFunction from './NameFunction.js'
+import './App.css';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Assignment = () => {
+  return (
+  <div className="App">
+      <header className="header">
+      <img src={logo} className="App-logo" alt="logo" width="100" />
+      </header>
+      <div className="content">
+        <Course className="courseName" CourseName="React Bootcamp Class" AssignNumber="Assignment # 3" />
+        <NameFunction firstName="Salman" lastName="Azeem" age={25} exp={25 - 22} />
+        <img src={profile} className="profilePic" alt="Salman Azeem" />
+      </div> 
+    </div>
+  )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Assignment/>, document.querySelector('#root'));
